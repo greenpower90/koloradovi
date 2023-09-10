@@ -159,12 +159,20 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .article-title{
-  font-size: 28px;
+  font-size: 22px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.inside-article-title{
+  font-size: 26px;
   line-height: 30px;
   color: rgb(0, 0, 0);
   font-weight: 600;
   margin-bottom: 20px;
-  cursor: pointer;
 }
 
 .article-title:hover{
