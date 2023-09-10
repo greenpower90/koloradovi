@@ -352,6 +352,12 @@ a, a:hover, a:active, a:visited, a:focus {
   text-decoration: underline;
 }
 
+@media (max-width:800px){
+  .menu-top{
+    font-size: 18px;
+  }
+}
+
 /* konec MENU*/
 /* začátek spodní části (články+menu) */
 
