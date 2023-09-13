@@ -199,12 +199,10 @@ a, a:hover, a:active, a:visited, a:focus {
 .odstavec{
   text-align: justify;
   text-justify: auto;
-  color: rgb(42, 165, 65);
   font-size: 20px;
   line-height: 40px;
   color: rgb(0, 0, 0);
-  font-weight: 500;
-  margin-bottom: 40px;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 
