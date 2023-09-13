@@ -22,7 +22,31 @@
           <div class="content">
             <!--top container obsahuje hlavní fotku a popisek-->
             <div class="top-container">
-              <img class="home-picture" src="../pictures/hlavni-fotka.jpg">
+              
+
+              <mainpicture style="height: 0; padding-bottom: 60%; width: 100%">
+                <script type="text/javascript">
+                  window.onload = function (){
+                      var images = 
+                     ['Images/1.jpg', 
+                      'Images/2.jpg', 
+                      'Images/3.jpg', 
+                      'Images/4.jpg', 
+                      'Images/5.jpg', 
+                      'Images/6.jpg', 
+                      'Images/7.png',
+                      'Images/8.jpg'
+                    ];
+                      var image = images[Math.floor(Math.random() * images.length)];
+                      document.getElementsByTagName('mainpicture')[0].style.backgroundImage = "url('" + image + "')";
+                      document.getElementsByTagName('mainpicture')[0].style.backgroundRepeat = "no-repeat";
+                      document.getElementsByTagName('mainpicture')[0].style.backgroundSize = "100%";
+                  }
+              </script>
+      
+        
+              </mainpicture>
+
               <p class="web-title">Emma Robinson a Kuba z Duba</p>
               <p class="undertitle">Neuvěřitelná dobrodružství od plotny</p>
             </div>
@@ -41,8 +65,8 @@
                   <a href="../inspirace-all.html">
                     <div class="category">Inspirace</div>
                   </a>
-                  <a class="inspiration-overview" href="../inspirace/inspirace-energie-ciste-lasky.html">
-                    <div class="inspiration-overview">
+                  <a class="article-overview" href="../inspirace/inspirace-energie-ciste-lasky.html">
+                    <div class="article-overview">
                       Nic jiného, než energie čisté lásky a radosti nemůže dítěti pomoci v 
                       překonáni  jeho karmy. 
                       Naše bezpodmínečná láska mu umožní pocit , že je plnohodnotným člověkem. 
@@ -430,8 +454,8 @@
                       <div class="category">Inspirace</div>
                     </a>
                     
-                    <a class="inspiration-overview" href="../inspirace/article3.html">
-                      <div class="inspiration-overview">
+                    <a class="article-overview" href="../inspirace/article3.html">
+                      <div class="article-overview">
                         Když je v sázce lidská bytost, 
                         tak člověk musí být trpělivý a ochotný se ještě učit, 
                         protože stát se může cokoliv. Navíc, když je ve hře ještě láska.
@@ -447,8 +471,8 @@
                   <a href="../inspirace-all.html">
                     <div class="category">Inspirace</div>
                   </a>
-                  <a class="inspiration-overview" href="../inspirace/article2.html">
-                    <div class="inspiration-overview">
+                  <a class="article-overview" href="../inspirace/article2.html">
+                    <div class="article-overview">
                       To nejlepší nelze říci, 
                       druhé nejlepší je obvykle špatně chápáno. 
                       Bert Hellinger
@@ -464,8 +488,8 @@
                   <a href="inspirace-all.html">
                     <div class="category">Inspirace</div>
                   </a>
-                  <a class="inspiration-overview" href="inspirace/article1.html">
-                    <div class="inspiration-overview">
+                  <a class="article-overview" href="inspirace/article1.html">
+                    <div class="article-overview">
                       Nemohl se mnou mluvit, Nemohl mi nic vysvětlit slovy. 
                       Avšak jeho srdce, dokonale živé, plné lásky, kterou mohl 
                       dávat a přijímat, z něj činilo bytost žijící plným životem.
