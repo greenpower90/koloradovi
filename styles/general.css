@@ -511,17 +511,15 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .quote-updates-container{
   display: grid; 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-column-gap: 15px;
   margin-top: 30px;
   height: 100%;
   min-height: 300px; 
-  
   margin-bottom: 30px;
 }
 
-.quote-container{
-}
+
 
 .updates-container{
   border-radius: 10px; 
@@ -529,6 +527,8 @@ a, a:hover, a:active, a:visited, a:focus {
   background-color: lightskyblue; 
   text-align: center; 
   padding-top: 40px;
+  min-height: 250px;
+  height: 100%;
 }
 
 @media (max-width:700px){
