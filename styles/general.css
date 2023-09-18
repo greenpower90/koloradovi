@@ -39,8 +39,7 @@ a, a:hover, a:active, a:visited, a:focus {
   min-width: 100%;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid rgb(206, 206, 206);
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   
 }
 
