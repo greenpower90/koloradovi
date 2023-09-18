@@ -27,7 +27,7 @@ let writer = document.querySelector(".writer");
 
 
 
-
+//
 
 // window.onload = function (){
  // let random = Math.floor(Math.random() * quotes.length);
