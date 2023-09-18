@@ -29,38 +29,34 @@
                 <!--Here will be displayed random main picture based on the javascript-->
         
               </mainpicture>
-
-              <script type="text/javascript">
-                window.onload = function (){
-                    var images = 
-                   ['Images/1.jpg', 
-                    'Images/2.jpg', 
-                    'Images/3.jpg', 
-                    'Images/4.jpg', 
-                    'Images/5.jpg', 
-                    'Images/6.jpg', 
-                    'Images/7.png',
-                    'Images/8.jpg'
-                  ];
-                    var image = images[Math.floor(Math.random() * images.length)];
-                    document.getElementsByTagName('mainpicture')[0].style.backgroundImage = "url('" + image + "')";
-                    document.getElementsByTagName('mainpicture')[0].style.backgroundRepeat = "no-repeat";
-                    document.getElementsByTagName('mainpicture')[0].style.backgroundSize = "100%";
-                }
-            </script>
+              
+              
 
               <p class="web-title">Emma Robinson & Kuba z Duba</p>
               <p class="undertitle">Neuvěřitelná dobrodružství od plotny</p>
             </div>
-            <!--inspirace container obsahuje články inspirace 
-              (grid 3 sloupce)-->
-            <div style="height: 150px; background-color: aquamarine; width: 100%; font-size: 30px;">
-            Zde budou aktuality a důležité věci k zobrazení, aby byli hezky na očích :-) 
-          </div>
 
+            
+            <div style="margin-top: 30px; height: 250px; display: grid; grid-template-columns: 1fr 1fr;grid-column-gap: 15px;">
+              <quote class="quote-container">
+                <div class="quote"><!--Here will be displayed random quote based on the javascript-->
+                </div>
+                <div class="writer"><!--Here will be displayed author of random quote based on the javascript--> </div>
+                <div class="button-area">
+                  <button class="button-citat" id="Qbtn">Další citát</button>
+                </div>
+              </quote>
+              <div style="border-radius: 10px; font-size: 30px; background-color: lightskyblue; text-align: center; padding-top: 40px;">Volný prostor pro důležité věci</div> 
+            </div>
+            
+            
+          
 
-          <div class="bottom-part-main-grid">
-            <div class="articles-bottom-left-grid">
+            <script src="main-picture-quotes-generator.js"></script>
+            <script type="text/javascript"></script>
+
+            <div class="bottom-part-main-grid">
+              <div class="articles-bottom-left-grid">
 
                 <!--inspirace - Energie čisté lásky-->
                 <div class="article-container">
@@ -79,29 +75,6 @@
                   </div>
                 </div>
 
-               <!--článek - rozhovor pro Můj Rozhlas - nemá být vidět, pouze v médiích-->
-               <!--
-                <div class="article-container">
-                
-                  <a style="padding-top: 26px;" href="rozhlas.html">
-                    <div class="article-title">Rozhovor pro Můj rozhlas</div>
-                  </a>
-                  <a class="article-overview" href="rozhlas.html">
-                    <div class="article-overview">
-                      Poslechněte si nejnovější rozhovor s Emmou – maminkou, pečovatelkou a lektorkou jógy – 
-                      pro Můj rozhlas.
-                    </div>
-                  </a> 
-                  <div class="continue-reading-container">
-                    <a href="rozhlas.html">
-                      <div class="continue-reading-link">Číst dále &rarr;</div>
-                    </a>
-                  </div>
-                  <div class="author-and-date-container">
-                    <div class="date-of-article">květen 2023</div>
-                  </div>
-                </div>
-                -->
 
                 <!--článek - Hvar voní-->
                 <div class="article-container">
@@ -501,11 +474,13 @@
                   </div>
                 </div>
 
-            </div>
-            <nav>
-              <script id="replace_with_navbar" src="../nav.js"></script>
-            </nav>
-            
+              </div>
+              <nav>
+                <script id="replace_with_navbar" src="../nav.js"></script>
+              </nav>
+            </div> 
+          </div>
+        </div>
       </main> 
     </body>
   </html>
