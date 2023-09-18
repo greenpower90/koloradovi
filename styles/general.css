@@ -490,6 +490,18 @@ a, a:hover, a:active, a:visited, a:focus {
   box-shadow: 0px 0px 3px gray;
 }
 
+.updates-container{
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 30px;
+  
+  box-shadow: 0px 0px 3px gray;
+  background-color: lightblue;
+}
+
 .writer{
   margin-top: 30px;
 }
@@ -521,15 +533,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 
 
-.updates-container{
-  border-radius: 10px; 
-  font-size: 30px;
-  background-color: lightskyblue; 
-  text-align: center; 
-  padding-top: 40px;
-  min-height: 250px;
-  height: 100%;
-}
+
 
 @media (max-width:700px){
   .quote-updates-container{
