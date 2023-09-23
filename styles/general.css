@@ -140,6 +140,31 @@ a, a:hover, a:active, a:visited, a:focus {
 
 
 
+.header-container{
+  display: flex;
+  position: fixed;
+  right:0;
+  left:0;
+  top:0;
+  height: 40px;
+  /*border-bottom: 1px solid rgb(204, 204, 204); */
+  background-color: white;
+}
+
+.header-part{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  padding-right: 10px ;
+}
+
+.header-home-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: darkred;
+}
+
 
 
 
@@ -158,12 +183,10 @@ a, a:hover, a:active, a:visited, a:focus {
 .article-container{
 
 
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   max-width: 300px;
   padding: 5px 5px;
-  max-height: 600px;
 }
 
 .article-container:hover{
@@ -194,13 +217,13 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .article-overview{
-  height: 100%;
   font-size: 18px;
   line-height: 22px;
   color: rgb(0, 0, 0);
   font-weight: 400;
   cursor: pointer;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .author-and-date-container{
@@ -224,6 +247,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .continue-reading-container{
   display: block;
+  text-align: center;
 
 }
 .continue-reading-link{
@@ -240,14 +264,15 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .articles-bottom-left-grid{
   display: grid;
+  padding-top: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  height: fit-content;
   column-gap: 5px;
   row-gap: 30px;
 }
 
 .article-title{
   font-size: 22px;
+  text-align: center;
   line-height: 30px;
   color: rgb(0, 0, 0);
   font-weight: 500;
@@ -615,3 +640,14 @@ a, a:hover, a:active, a:visited, a:focus {
       grid-template-columns: 1fr 1fr;
     }
   }
+  .rozhlas-grid{
+    display: grid; 
+    grid-template-columns: 1.5fr 1fr; 
+    column-gap: 20px;
+    }
+    
+    @media (max-width:700px){
+      .rozhlas-grid{
+        grid-template-columns: 1fr;
+      }
+    }
