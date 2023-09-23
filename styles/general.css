@@ -179,6 +179,9 @@ a, a:hover, a:active, a:visited, a:focus {
   row-gap: 20px;
 }
 
+.pic-test{
+  width:100%;
+}
 
 .article-container{
 
