@@ -190,6 +190,7 @@ a, a:hover, a:active, a:visited, a:focus {
   flex-direction: column;
   max-width: 300px;
   padding: 5px 5px;
+  grid-row: span 2;
 }
 
 .article-container:hover{
@@ -198,7 +199,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .tall{
-  grid-row: span 2;
+  grid-row: span 3;
 }
 
 .category{
