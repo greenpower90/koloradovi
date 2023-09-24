@@ -202,6 +202,8 @@ a, a:hover, a:active, a:visited, a:focus {
   grid-row: span 3;
 }
 
+
+
 .category{
   color: rgb(160, 1, 1);
   margin-bottom: 8px;
@@ -278,13 +280,18 @@ a, a:hover, a:active, a:visited, a:focus {
   row-gap: 30px;
 }
 
+.article-container-top{
+  display: flex; 
+  justify-content: space-between;
+}
+
 .article-title{
   font-size: 22px;
   text-align: center;
   line-height: 30px;
   color: rgb(0, 0, 0);
   font-weight: 500;
-  margin-bottom: 20px;
+  padding: 10px 0px;
   cursor: pointer;
 }
 
