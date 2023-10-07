@@ -1,12 +1,19 @@
 <!DOCTYPE html>
   <html>
     <head>
-
+      
       <title>Emma Robinson & Kuba z Duba</title>
 
+      <!--Meta property og nastaven pro zobrazení fotky při sdílení na soc. sítích.-->
+      <meta property="og:image" content="https://www.emmarobinson.cz/Images/8.jpg" />
+      <meta property="og:image:type" content="image/jpg">
+      <meta property="og:image:width" content="200">
+
+      <!--Nastavení ikony v liště otevřených záložek-->
       <link rel = "icon" href ="../icons/icon.jpg" 
         type = "image/x-icon">
 
+      <!--nahrání stylů-->
       <link rel="stylesheet" href="../styles/general.css">
 
       <!--Meta viewport nastaven pro upravení stránek pro mobilní zařízení-->
@@ -30,9 +37,9 @@
               <mainpicture class="main-picture">
                 
                 <!--Here will be displayed random main picture based on the javascript-->
-        
+                
               </mainpicture>
-              
+               
               
 
               <p class="web-title">Emma Robinson & Kuba z Duba</p>
@@ -60,10 +67,11 @@
               </div>
               <div class="writer"><!--Here will be displayed author of random quote based on the javascript--> 
               </div>
-              <img src="../icons/arrow_next_right_icon.png" class="button-citat-right" id="Nbtn">
-              <img src="../icons/arrow_next_left_icon.png" class="button-citat-left" id="Pbtn">
+              <img src="../icons/arrow_next_right_icon.png" class="button-citat-right" id="Nbtn" onclick="nextQuote()">
+              <img src="../icons/arrow_next_left_icon.png" class="button-citat-left" id="Pbtn" onclick="previousQuote()">
               
             </div>
+            
             
             
             
@@ -75,6 +83,21 @@
               
             </div>
 
+            
+              
+              
+              
+
+
+            
+            
+            
+              <a style="display: flex; flex-direction: column; justify-content: center; position: relative; width: 70%; max-width: 700px; margin-bottom: 40px;background-color: #250d61; height: 160px;"  href="https://www.kontobariery.cz/getdoc/091b3e1a-62b6-430b-b1b6-5c597d9bac2e/Elektricky-vozik-pro-Jakuba" target="_blank">
+                
+                <p style="font-size: 20px; color: yellow; text-align: center; margin-bottom: 10px;"></p>
+                <p style="font-size: 35px; color: white; text-align: center;">Elektrický vozík pro <br> Jakuba</p>
+                <p style="position: absolute; font-size: 20px; right: 20px; bottom: 20px; color: yellow; ">Více zde</p>
+              </a>
             
 
             <!--grid rozdělující náhledy článků a menu-->
@@ -100,6 +123,82 @@
                   </div>
                 </div>
               --> 
+
+               
+
+
+                <!--článek - Pane bože jenom to ne-->
+                <div class="article-container tall">
+                  <div class="article-container-top">
+                    <a href="../vzkazy-all.html">
+                      <div class="category">Vzkazy v láhvi</div>
+                    </a>
+                    <div class="author-and-date-container">
+                      <div class="date-of-article">říjen 2023</div>
+                    </div>
+                  </div>
+                  <img class="pic-test" src="../pictures/pane-boze-jenom-to-ne/pane-boze-jenom-to-ne.jpg">
+
+                  <a href="../vzkazy-v-lahvi/pane-boze-jenom-to-ne.html" >
+                    <div class="article-title">Pane Bože jenom to ne</div>
+                  </a>
+                  
+                  <a class="article-overview"  href="../vzkazy-v-lahvi/pane-boze-jenom-to-ne.html" >
+                    <div class="article-overview">
+                      Prosila jsem, když jsem Tebe a Tvého syna viděla poprvé v životě v nemocničním pokoji, kde jsme spolu strávili měsíc, milá moja.
+                      Tvůj chlapeček byl roční a kousek a mému byly jen tři měsíce.
+                      Na tvém malém byly znát všechny ty mozkové operace (dohromady jich prodělal za svůj život osm) a já původním povoláním rehabilitační sestra, poprvé v životě, viděla postižené dítě. 
+                    </div>
+                  </a>
+                  
+                  <div class="continue-reading-container">
+                    <a href="../vzkazy-v-lahvi/pane-boze-jenom-to-ne.html" >
+                      <div class="continue-reading-link">Číst dále</div>
+                    </a>
+
+                  </div>
+                  
+                  
+                  
+                </div>
+                
+
+                <!--Intermezzo - Vyznání říjen 2023-->
+                <div class="article-container vyznani">
+                  <div class="article-container-top">
+                    <a href="../vzkazy-all.html"><!--Doplnit odkaz na kategorii-->
+                      <div class="category">Vzkazy v láhvi</div><!--KATEGORIE-->
+                    </a>
+                    <div class="author-and-date-container">
+                      <div class="date-of-article">říjen 2023</div><!--Doplnit datum-->
+                    </div>
+                  </div>
+                  <img class="pic-test" src=""><!--Doplnit obrázek overview-->
+
+                  
+                    <div style="text-decoration: none;cursor: default;" class="article-title">Vyznání</div><!--NADPIS-->
+                  
+                  
+                    <div style="cursor: default;" class="article-overview"><!--POPIS-->
+                      Poznám ho koutkem oka.<br>
+                      Z dálky deseti metrů.<br>
+                      Poznám ho poslepu,<br>
+                      podle způsobu dechu.<br>
+                      Probudí mě ze spaní, <br>
+                      Vidím ho, když se zahledíš,<br>
+                      bere mi dech..<br>
+                      <br>
+                      Někdy dělám, že ho nevidím.<br>
+                      Kde jsme to skončili?<br>
+                      Zeptám se jen tak mimochodem,<br> když odchází.<br>
+                      Starý známý.<br><br>
+                      Epileptický záchvat….
+                    </div>
+                  
+                  
+                </div>
+
+                
 
                 <!--článek - Hvar voní-->
                 <div class="article-container">
@@ -130,6 +229,8 @@
                     </a>
                   </div> 
                 </div>
+
+                
 
                 <!--článek - Český Krumlov-->
                 <div class="article-container tall">
@@ -165,6 +266,34 @@
                   
                 </div>
                 
+                <!--Intermezzo - Sebevedomi-->
+                <div class="article-container vyznani small">
+                  <div class="article-container-top">
+                    <a href="../vzkazy-all.html"><!--Doplnit odkaz na kategorii-->
+                      <div class="category">Vzkazy v láhvi</div><!--KATEGORIE-->
+                    </a>
+                    <div class="author-and-date-container">
+                      <div class="date-of-article"></div><!--Doplnit datum-->
+                    </div>
+                  </div>
+                  <img class="pic-test" src=""><!--Doplnit obrázek overview-->
+
+                  
+                    <div style="text-decoration: none;cursor: default;" class="article-title">Sebevědomí</div><!--NADPIS-->
+                  
+                  
+                    <div style="cursor: default;" class="article-overview"><!--POPIS-->
+                      Nijak nesouvisí s dokonalostí <br>
+                      a dokonalost není zárukou štěstí <br>
+                      A láska bez podmínek souvisí se sebevědomím<br>
+                      A to je štěstí <br>
+                      A pokud Vás nikdo takhle nemiluje, <br>
+                      musíte věřit, že takhle Vás miluje Bůh.<br>
+                      …A jak (se) milujete Vy?<br>
+                    </div>
+                  
+                  
+                </div>
 
                 <!--článek - Bezbariérovým karavanem k moři-->
                 <div class="article-container">
@@ -269,6 +398,34 @@
 
                   </div>
                   
+                  
+                  
+                </div>
+
+                <!--Intermezzo - O Santiago-->
+                <div class="article-container vyznani small">
+                  <div class="article-container-top">
+                    <a href="../vzkazy-all.html"><!--Doplnit odkaz na kategorii-->
+                      <div class="category">Vzkazy v láhvi</div><!--KATEGORIE-->
+                    </a>
+                    <div class="author-and-date-container">
+                      <div class="date-of-article"></div><!--Doplnit datum-->
+                    </div>
+                  </div>
+                  <img class="pic-test" src=""><!--Doplnit obrázek overview-->
+
+                  
+                    <div style="text-decoration: none;cursor: default;" class="article-title"></div><!--NADPIS-->
+                  
+                  
+                    <div style="cursor: default;" class="article-overview"><!--POPIS-->
+                      O Santiago<br>
+                      Říkala ta postarší servírka s nádhernejma <br>
+                      nohama a hladila tě po vláskách. <br>
+                      A mě dojímalo, jak je na tebe hodná… <br>
+                      a strašně jsem toužila po takových nohách. <br>
+                      Jestli je to tím, že tak hulí? <br>
+                    </div>
                   
                   
                 </div>
@@ -469,98 +626,65 @@
                   
                 </div>
 
-                <!--článek - Jmenuju se Emma Robinson-->
-             <!--
-                <div class="article-container">
-                  <a href="../vzkazy-all.html">
-                    <div class="category">Vzkazy v láhvi</div>
-                  </a>
-                  <a href="../vzkazy-v-lahvi/Jmenuju-se-Emma-Robinson.html">
-                    <div class="article-title">Jmenuju se Emma Robinson</div>
-                  </a>
-                  
-                  <a class="article-overview"  href="../vzkazy-v-lahvi/Jmenuju-se-Emma-Robinson.html" >
-                    <div class="article-overview">
-                      Ani jedno z těch jmen nemám od narození.
-                      Můj brácha říkal, že tím pádem nejsem důvěryhodná a už nikdy nebudu.
-                      Jsem Emma a Robinson od té chvíle, co se mi narodil můj syn. 
-                    </div>
-                  </a>
-                  
-                  <div class="continue-reading-container">
-                    <a href="../vzkazy-v-lahvi/Jmenuju-se-Emma-Robinson.html" >
-                      <div class="continue-reading-link">Číst dále &rarr;</div>
-                    </a>
-
-                  </div>
-                  
-                  
-                  <div class="author-and-date-container">
-                    <div class="date-of-article">červen 2020</div>
-                  </div>
-                </div>
-              -->
-
-                
-                <!--začátek 3 článku inspirace - Když je v sázce lidská bytost-->
-              <!--
-                <div class="article-container">
-                    <a href="inspirace-all.html">
-                      <div class="category">Inspirace</div>
-                    </a>
-                    
-                    <a class="article-overview" href="../inspirace/article3.html">
-                      <div class="article-overview">
-                        Když je v sázce lidská bytost, 
-                        tak člověk musí být trpělivý a ochotný se ještě učit, 
-                        protože stát se může cokoliv. Navíc, když je ve hře ještě láska.
-                      </div>
+                <!--článek - Někde musí být duha březen 2020-->
+                <div class="article-container tall">
+                  <div class="article-container-top">
+                    <a href="../vzkazy-all.html"><!--Doplnit odkaz na kategorii-->
+                      <div class="category">Vzkazy v láhvi</div><!--Vzkazy v láhvi-->
                     </a>
                     <div class="author-and-date-container">
-                      <div class="date-of-article">červen 2020</div>
+                      <div class="date-of-article">březen 2020</div><!--Doplnit datum-->
                     </div>
-                </div>
-              -->
+                  </div>
+                  <img class="pic-test" src="../pictures/nekde-musi-byt-duha/nekde-musi-byt-duha.jpg">
 
-                <!--začátek 2 článku inspirace - To nejlepší nelze říci-->
-              <!--
-                <div class="article-container">
-                  <a href="../inspirace-all.html">
-                    <div class="category">Inspirace</div>
+                  <a href="../vzkazy-v-lahvi/nekde-musi-byt-duha.html" ><!--Doplnit odkaz na článek-->
+                    <div class="article-title">Někde musí být duha</div><!--NADPIS-->
                   </a>
-                  <a class="article-overview" href="../inspirace/article2.html">
-                    <div class="article-overview">
-                      To nejlepší nelze říci, 
-                      druhé nejlepší je obvykle špatně chápáno. 
-                      Bert Hellinger
+                  <a class="article-overview"  href="../vzkazy-v-lahvi/nekde-musi-byt-duha.html" ><!--Doplnit odkaz na článek-->
+                    <div class="article-overview"><!--POPIS-->
+                      Nevím, kolikrát jsem v noci u Kuby v pokojíčku byla, ale nakonec jsem tam zůstala. Mačkali jsme se tam v jeho modrým autíčku/posteli, co dostal k šestnáctým narozeninám místo řidičáku, než konečně usnul. Kombinace farmakoresistentní epilepsie a spastických bolestivých křečí generuje dost důvodů nespat.
+                      Někdy ho bolí nohy a pomáhá, že si spolu sedneme, tak nějak se opíráme o sebe navzájem, než to trochu přejde.
                     </div>
                   </a>
-                  <div class="author-and-date-container">
-                    <div class="date-of-article">červen 2020</div>
+                  <div class="continue-reading-container">
+                    <a href="../vzkazy-v-lahvi/nekde-musi-byt-duha.html" ><!--Doplnit odkaz na článek-->
+                      <div class="continue-reading-link">Číst dále</div>
+                    </a>
                   </div>
                 </div>
-              -->
 
+                 <!--článek - Je to pryč květen 2016-->
+                 <div class="article-container">
+                  <div class="article-container-top">
+                    <a href="../vzkazy-all.html"><!--Doplnit odkaz na kategorii-->
+                      <div class="category">Vzkazy v láhvi</div><!--KATEGORIE-->
+                    </a>
+                    <div class="author-and-date-container">
+                      <div class="date-of-article">květen 2016</div><!--Doplnit datum-->
+                    </div>
+                  </div>
+                  <img class="pic-test" src="../pictures/je-to-pryc/je-to-pryc.JPEG"><!--Doplnit obrázek overview-->
 
-
-                <!--začátek 1 článku inspirace - Nemohl se mnou mluvit-->
-              <!--
-                <div class="article-container">
-                  <a href="inspirace-all.html">
-                    <div class="category">Inspirace</div>
+                  <a href="../vzkazy-v-lahvi/je-to-pryc.html" ><!--Doplnit odkaz na článek-->
+                    <div class="article-title">Je to pryč</div><!--NADPIS-->
                   </a>
-                  <a class="article-overview" href="inspirace/article1.html">
-                    <div class="article-overview">
-                      Nemohl se mnou mluvit, Nemohl mi nic vysvětlit slovy. 
-                      Avšak jeho srdce, dokonale živé, plné lásky, kterou mohl 
-                      dávat a přijímat, z něj činilo bytost žijící plným životem.
+                  <a class="article-overview"  href="../vzkazy-v-lahvi/je-to-pryc.html" ><!--Doplnit odkaz na článek-->
+                    <div class="article-overview"><!--POPIS-->
+                      Je vedro. Dala jsem Kubiho k volantu a že natřu ten stůl, zatímco si bude hrát. V garáži je chladno a to je prima dneska, no ne? Pustila jsem muziku, sedla si na chvilku vedle něj, na místo spolujezdce. Dělávali jsme to takhle a měl to vždycky moc rád. Tak kam jedem Kubi? Kuba za volantem se na mě tázavě podíval.
                     </div>
                   </a>
-                  <div class="author-and-date-container">
-                    <div class="date-of-article">červen 2020</div>
+                  <div class="continue-reading-container">
+                    <a href="../vzkazy-v-lahvi/je-to-pryc.html" ><!--Doplnit odkaz na článek-->
+                      <div class="continue-reading-link">Číst dále</div>
+                    </a>
                   </div>
                 </div>
-              -->
+
+                
+                
+                
+
 
 
               </div>

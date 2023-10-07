@@ -197,10 +197,20 @@ a, a:hover, a:active, a:visited, a:focus {
   border-radius: 2px;
 }
 
+
+
 .tall{
   grid-row: span 3;
 }
 
+
+.small{
+  grid-row: span 1;
+}
+
+.middle{
+  grid-row: span 3;
+}
 
 
 .category{
@@ -245,6 +255,13 @@ a, a:hover, a:active, a:visited, a:focus {
 .author-of-article{
   padding-right: 15px;
 }
+
+.article-container.vyznani:hover{
+  box-shadow: none;
+  border: none;
+}
+
+
 
 .bottom-part-main-grid{
   display: grid;
@@ -304,7 +321,13 @@ a, a:hover, a:active, a:visited, a:focus {
   font-size: 26px;
   line-height: 30px;
   color: rgb(0, 0, 0);
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article-top-picture{
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -335,12 +358,23 @@ a, a:hover, a:active, a:visited, a:focus {
   
   color: rgb(0, 0, 0);
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 36px
 }
 
+.nadpis{
+  margin-top: 20px;
+}
 
+.h2{
+  margin-bottom: 5px;
+}
+
+.textcenter{
+  text-align: center;
+  width: 100%;
+}
 
 .web-title{
   font-size: 30px;
@@ -375,7 +409,7 @@ a, a:hover, a:active, a:visited, a:focus {
   margin-bottom: 40px;
   width: 100%;
   max-width: 600px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   flex:1;
   border: 1px solid rgb(206, 206, 206);
 }
@@ -399,6 +433,11 @@ a, a:hover, a:active, a:visited, a:focus {
   vertical-align: text-top;
   font-size: 15px;
   
+}
+
+.aktualita{
+  padding: 0;
+  padding-top: 10px;
 }
 
 .menu-bottom-media{
@@ -459,12 +498,29 @@ a, a:hover, a:active, a:visited, a:focus {
   text-decoration: underline;
 }
 
+.aktualni-sbirka{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  position: relative; 
+  width: 100%;
+  background-color: #250d61; 
+  height: 200px;
+}
+
+.aktualni-sbirka:hover{
+  background-color: #381492;
+}
+
 @media (max-width:1100px){
   .menu-top{
     font-size: 18px;
   }
 }
 
+.nav-article{
+  padding-top: 47px;
+}
 
 
 /* konec MENU*/
@@ -534,7 +590,7 @@ a, a:hover, a:active, a:visited, a:focus {
     grid-template-columns: 1fr 1fr 1fr; 
     column-gap: 10px; 
     margin-bottom: 10px;
-    row-gap: 50px;
+    row-gap: 10px;
   }
 
   @media (max-width:700px){
@@ -549,7 +605,7 @@ a, a:hover, a:active, a:visited, a:focus {
     grid-template-columns: 1fr 1fr; 
     column-gap: 10px; 
     margin-bottom: 10px;
-    row-gap: 50px;
+    row-gap: 20px;
   }
 
 @media (max-width:700px){
