@@ -8,12 +8,20 @@ const allPictures = document.querySelectorAll('.js-picture');
       let backgroundElement = document.getElementById("js-background-div");
       backgroundElement.style.display = "block";
       document.body.style.overflow = "hidden";
+      backgroundElement.innerHTML = `
+      <span class="close-button" onclick="closeImageButton()">×</span>
+      <span class="picture-next-button js-next-button"><img style="width: 40px" src="../icons/next.ico"></span>
+      <span class="picture-previous-button js-previous-button"><img style="width: 40px" src="../icons/previous.ico"></span>
+      <img src="" alt="Popup Image" id="popupImage">
+      `
 
       //a zobrazí se příslušná fotka
       let showPictureElement = document.getElementById("popupImage");
       showPictureElement.src = picture.src
 
       console.log(index);
+
+
 
       let nextButtonElement = document.querySelector('.js-next-button');
       nextButtonElement.addEventListener('click', () => {
