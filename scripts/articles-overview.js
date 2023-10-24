@@ -12,8 +12,9 @@ overviews.forEach((articleOverview) => {
         <div class="date-of-article">${articleOverview.date}</div>
       </div>
     </div>
-
-    <img class="overview-picture" src="${articleOverview.picture}">
+    <a href="${articleOverview.articleLink}">
+      <img class="overview-picture" src="${articleOverview.picture}">
+    </a>
 
     <a href="${articleOverview.articleLink}" >
       <div class="article-title">${articleOverview.title}</div>

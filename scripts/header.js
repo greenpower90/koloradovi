@@ -4,7 +4,7 @@ let pageTitleElement = '';
 let articleTitle = document.querySelector('.js-title').innerHTML;
 console.log(articleTitle);
 
-console.log(overviews[2].title);
+
 
 overviews.forEach((articleData, index) => {
     if(articleData.title === articleTitle){
@@ -43,7 +43,11 @@ overviews.forEach((articleData, index) => {
 })
 
 
+if(headerElement === ''){
+  
+}else {document.querySelector('.header').innerHTML = headerElement;
+
+}
 
 console.log(headerElement);
 document.title = pageTitleElement;
-document.querySelector('.header').innerHTML = headerElement;
