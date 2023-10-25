@@ -2,7 +2,7 @@
 let headerElement = '';
 let pageTitleElement = '';
 let articleTitle = document.querySelector('.js-title').innerHTML;
-console.log(articleTitle);
+//console.log(articleTitle);
 
 
 
@@ -49,5 +49,5 @@ if(headerElement === ''){
 
 }
 
-console.log(headerElement);
+//console.log(headerElement);
 document.title = pageTitleElement;
