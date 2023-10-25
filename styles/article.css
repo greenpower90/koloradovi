@@ -62,6 +62,13 @@
 }
 
 @media (max-width:700px){
+  .article-grid{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width:700px){
   .picture-grid-typ-three{
     grid-template-columns: 1fr;
     row-gap: 10px;
