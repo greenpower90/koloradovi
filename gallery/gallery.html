@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Hvar voní</title>
+      <title>Galerie</title>
       <link rel = "icon" href ="../icons/icon.jpg" 
         type = "image/x-icon">
        <!--Meta property og nastaven pro zobrazení fotky při sdílení na soc. sítích.--> 
@@ -30,43 +30,25 @@
       <header class="header">
         <!--here is header JS-->
       </header>
-
-      <div style="padding: 30px;  display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; grid-row-gap: 10px; grid-column-gap: 10px;" class="gallery-grid">
-         <img class="gallery-img js-picture" style="width: 100%; grid-column: span 1; grid-row: span 1; height: fit-content;" src="/gallery/pictures/IMG_4621.JPG">
-         <img class="gallery-img js-picture" style="width: 100%; grid-column: span 1; grid-row: span 1; height: fit-content;" src="/gallery/pictures/IMG_5143.jpg">
-
-         <img class="gallery-img js-picture" style="width: 100%; height: fit-content;" src="/gallery/pictures/IMG_5148.jpg">
-         <img class="gallery-img js-picture" style="width: 100%; grid-column: span 3; grid-row: span 3; height: fit-content;" src="/gallery/pictures/IMG_5149.jpg">
-         <img class="gallery-img js-picture" style="width: 100%; height: fit-content;" src="/gallery/pictures/IMG_6504.jpg">
-         <img class="gallery-img js-picture" style="width: 100%; height: fit-content;" src="/gallery/pictures/IMG_6508.jpg">
-         <img class="gallery-img js-picture" style="width: 100%; height: fit-content;" src="/gallery/pictures/IMG_8046.jpg">
-         <img class="gallery-img js-picture" style="width: 100%; grid-column: span 2; grid-row: span 2; height: fit-content;" src="/gallery/pictures/IMG_7251.PNG">
-         <img class="gallery-img js-picture" style="width: 100%; grid-row: span 2; height: fit-content; " src="/gallery/pictures/IMG_6512.jpg">
-         <img class="gallery-img js-picture" style="width: 100%; height: fit-content;" src="/gallery/pictures/IMG_6593.jpg">
-         
-         
-         
+      <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+        <p style="font-size: 30px;">Jakub a asistenti</p>
+      </div>
+      <div class="js-gallery-grid" style="padding: 30px;  display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; grid-row-gap: 10px; grid-column-gap: 10px;" class="gallery-grid">
+        
       </div>
 
-      <!-- Image containter where image will show in big size -->
+      
       <div class="image-popup-container" id="js-background-div">
-        <!--
-        <span class="close-button" onclick="closeImageButton()">×</span>
-        <span class="picture-next-button js-next-button"><img style="width: 40px" src="../icons/next.ico"></span>
-        <span class="picture-previous-button js-previous-button"><img style="width: 40px" src="../icons/previous.ico"></span>
-        
-        <img src="" alt="Popup Image" id="popupImage">
--->
+        <!-- Image containter where image will show in big size -->
       </div>
       
       <patka style="width: 100%;">
         <script id="replace_with_patka" src="../patka.js"></script>
       </patka>
-      <script src="../data/overviews-data.js"></script>
-      <script src="../scripts/next-previous-articles.js"></script> 
-      <script src="../scripts/header.js"></script>
-      <script src="../article-picture.js"></script>    
       
       
+
+      
+      <script type="module" src="../scripts/gallery-script.js"></script>
     </body>
   </html>

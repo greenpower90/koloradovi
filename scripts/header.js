@@ -1,15 +1,11 @@
+import { overviews } from '../data/overviews-data.js';
+import { currentArticle } from './next-previous-articles.js';
+
 
 let headerElement = '';
-let pageTitleElement = '';
-let articleTitle = document.querySelector('.js-title').innerHTML;
-//console.log(articleTitle);
+//let articleTitle = document.querySelector('.js-title').innerHTML;
 
-
-
-overviews.forEach((articleData, index) => {
-    if(articleData.title === articleTitle){
-      pageTitleElement = articleData.title;
-      headerElement += `
+headerElement += `
       <div class="header-container" >
         <div class="header-part">
           <a href="../index.html">
@@ -21,27 +17,23 @@ overviews.forEach((articleData, index) => {
           <div class="header-home-container" style="width: 15px;"><img style="width: 100%; padding-left: 5px; padding-right: 5px;" src="/icons/shark.png" ></div>
         </div>
         <div class="header-part">
-          <a href="../${articleData.cathegory.link}">
+          <a href="../${overviews[currentArticle].cathegory.link}">
             <div class="header-home-container">  
-              <p>${articleData.cathegory.name}</p>
+              <p>${overviews[currentArticle].cathegory.name}</p>
             </div>
           </a>
           <div class="header-home-container" style="width: 15px;"><img style="width: 100%;padding-left: 5px;" src="/icons/shark.png" ></div>
         </div>
         <div class="header-part">
-          <a href="../${articleData.articleLink}">
+          <a href="../${overviews[currentArticle].articleLink}">
             <div class="header-home-container"> 
-              <p>${articleData.title}</p>
+              <p>${overviews[currentArticle].title}</p>
             </div>
           </a>
         </div>         
 
       </div>
       `
-    } else{return};
-    
-})
-
 
 if(headerElement === ''){
   
@@ -49,5 +41,9 @@ if(headerElement === ''){
 
 }
 
-//console.log(headerElement);
-document.title = pageTitleElement;
+console.log(overviews[currentArticle].date);
+document.querySelector('.js-date-of-article')
+  .innerHTML = overviews[currentArticle].date;
+
+document.title = overviews[currentArticle].title;
+

@@ -1,4 +1,4 @@
-const overviews = [
+export const overviews = [
 {//článek - Pane Bože jenom to ne - říjen 2023
   articleId: 'vvl-paneboze',
   dimension: ' tall ',
@@ -294,5 +294,4 @@ const overviews = [
   readMore: '',
 }*/
 ];
-
 

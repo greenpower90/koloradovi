@@ -1,4 +1,4 @@
-const quotes = 
+export const quotes = 
 [{
   quote: `"Nic jiného, než energie čisté lásky a radosti nemůže dítěti pomoci v překonáni jeho karmy. Naše bezpodmínečná láska mu umožní pocit , že je plnohodnotným člověkem.."`,
   writer: ``
@@ -67,8 +67,37 @@ const quotes =
   writer: ``
   },
   {
-
-    quote: `"Bez jedinýho slova tě naučim všechno, co potřebuješ vědět o tomto světě."`,
-    writer: `Kuba z Duba`
+  quote: `"Bez jedinýho slova tě naučim všechno, co potřebuješ vědět o tomto světě."`,
+  writer: `Kuba z Duba`
     },
 ]
+
+
+
+export function nextQuote(randomQuoteIndex, quote, writer){
+  //btnn.addEventListener("click", function() {
+   // let btnn = document.querySelector("#Nbtn")
+    
+    randomQuoteIndex = randomQuoteIndex + 1;
+    randomQuoteIndex = randomQuoteIndex % quotes.length;
+    quote.innerHTML = quotes[randomQuoteIndex].quote;
+    writer.innerHTML = quotes[randomQuoteIndex].writer;
+    quote.innerHTML = quotes[randomQuoteIndex].quote;
+    writer.innerHTML = quotes[randomQuoteIndex].writer;
+    console.log(`citát č. ${randomQuoteIndex}`)
+ // })
+};
+
+export function previousQuote(randomQuoteIndex, quote, writer){
+  //btnn.addEventListener("click", function() {
+   // let btnp = document.querySelector("#Pbtn")
+    
+    randomQuoteIndex = randomQuoteIndex - 1;
+    randomQuoteIndex = randomQuoteIndex % quotes.length;
+    quote.innerHTML = quotes[randomQuoteIndex].quote;
+    writer.innerHTML = quotes[randomQuoteIndex].writer;
+    console.log(`citát č. ${randomQuoteIndex}`);
+    if (randomQuoteIndex === 0) { // i would become 0
+      randomQuoteIndex = quotes.length; // so put it at the other end of the array
+    }
+};
