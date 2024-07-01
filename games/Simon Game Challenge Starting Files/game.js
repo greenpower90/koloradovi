@@ -14,7 +14,7 @@ function randomColor(){
 
 //přehraje zvuk na základě textu barvy
 function playSound(color){
-    let path = `/sounds/${color}.mp3`
+    let path = `./sounds/${color}.mp3`
     let soundToPlay = new Audio(path)
     soundToPlay.play()
 }
