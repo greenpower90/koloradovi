@@ -68,10 +68,20 @@ console.log(`GameIsOn  ${gameIsOn}`)
 $(document).keydown(()=>{
     if (!gameIsOn){
         gameIsOn = true
+        $('#new-game-btn').addClass('hidden')
         updateTitle(level)
         nextSequence()
     }
 
+})
+
+$('#new-game-btn').click(()=>{
+    if (!gameIsOn){
+        gameIsOn = true
+        $('#new-game-btn').addClass('hidden')
+        updateTitle(level)
+        nextSequence()
+    }
 })
 
 
@@ -93,6 +103,7 @@ $(".btn").click((e)=>{
         }else{
             playSound('wrong')
             $("#level-title").text(`GAME OVER, level ${level} - Press A Key to Start`)
+            $('#new-game-btn').removeClass('hidden')
             resetGame()
         }
     }
