@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    
+
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+p{
+    font-size:1.3em; 
+    line-height: 30px;  
+    max-width: 700px;
+}
+
+.content{
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 400px;
+    max-width: 700px;
+}
+
+#main-content{
+    
+    background-image: url("./pictures/bikes_together.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#our_story_content{
+    background-image: url("./pictures/rowing.png");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#details_content{
+    background-image: url("./pictures/burt.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    flex-direction: column;
+}
+
+#location-content{
+    background-image: url("./pictures/compas.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#nav{
+    display: flex;
+    list-style: none;
+}
+#nav li{
+    margin: 1em;
+    padding: 5px 10px;
+}
+li a{
+    cursor: pointer;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+
+}
+li a:hover{
+    font-weight: bold;
+}
+
+.names{
+    padding-left: 30px;
+    font-family: 'Scriptina', sans-serif;
+    color:antiquewhite;
+    font-size: 45px;
+}
+
+.center-content{
+    display:block;
+    padding-bottom: 30px;
+}
+
+.center-content p{
+    margin: 0 auto;
+}
+
+#pic-zamek{
+    max-width: 600px;
+}
