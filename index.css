@@ -1,12 +1,15 @@
 body{
     margin:0;
-    
-
+     
     justify-content: center;
     text-align: center;
     height: 100vh;
     box-sizing: border-box;
 }
+
+header{ box-shadow: 0px 10px 15px rgb(226, 189, 141);
+margin-bottom: 20px;}
+
 p{
     font-size:1.3em; 
     line-height: 30px;  
@@ -33,12 +36,14 @@ p{
     background-repeat: no-repeat;
     background-position:center;
 }
+
 #details_content{
-    background-image: url("./pictures/burt.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
+    margin: 3em auto;
+    margin-bottom: 50px;
     flex-direction: column;
 }
+
+
 
 #location-content{
     background-image: url("./pictures/compas.jpg");
@@ -83,4 +88,8 @@ li a:hover{
 
 #pic-zamek{
     max-width: 600px;
+}
+
+.round{
+    border-radius: 50%;
 }
