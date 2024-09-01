@@ -94,6 +94,11 @@ li a:hover{
     display: none;
 }
 
+.picture-size{
+    max-width: 600px;
+    width:100%;
+}
+
 @media(max-width: 800px){
     header{
         display:flex;
