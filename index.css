@@ -32,12 +32,14 @@ p{
 }
 
 #main-content{
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-image: url("./pictures/bikes_together.jpg");
     background-repeat: no-repeat;
     background-position:center;
     width: 100%;
     max-width: 700px;
+    max-height: 400px;
 }
 
 
@@ -104,13 +106,25 @@ li a:hover{
     border-radius: 50%;
 }
 
-#show-small{
+.show-small{
     display: none;
 }
 
 .picture-size{
     max-width: 600px;
     width:100%;
+    height: 400PX;
+    object-fit: cover;
+    border: none;
+}
+
+.bike{
+    width: 100%;
+    max-width: 600px;
+}
+
+.compas{
+    max-width: 200px;
 }
 
 @media(max-width: 800px){
@@ -121,11 +135,11 @@ li a:hover{
     #nav{
         flex-direction: column;
     }
-    #show-small{
+    .show-small{
         display: block;
     }
-    .hide{
-        background-color: aqua;
-        display:none
+    #main-content{
+        display:none;
+        background-image:none;
     }
 }
